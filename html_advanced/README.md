@@ -54,3 +54,8 @@ This project is licensed under the [MIT License](LICENSE).
 If you have any questions or inquiries, please feel free to contact us at [info@smileSchool.com](mailto:info@smileschool.com). We're here to assist you!
 
 Visit [Smile School](https://www.smileschool.com) and start your smile journey today! 😄
+
+Holberton Logo:
+![Holberton Logo](https://getlogovector.com/wp-content/uploads/2020/11/holberton-school-logo-vector.png)
+
+
