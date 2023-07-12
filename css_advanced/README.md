@@ -59,3 +59,4 @@ Holberton Logo:
 ![Holberton Logo](https://getlogovector.com/wp-content/uploads/2020/11/holberton-school-logo-vector.png)
 
 
+![oval](image.png)
