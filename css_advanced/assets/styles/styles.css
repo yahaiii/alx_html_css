@@ -192,7 +192,12 @@ div.pros {
     font-style: italic;
 }
 
-/* videos */
+/* videos section */
+
+#videos {
+    padding-bottom: 5%;
+}
+
 .video-heading {
     font-size: 1.5em;
     margin-top: 7%;
@@ -285,6 +290,37 @@ div.pros {
     color: var(--primary);
   }
 
-  /* .stars span {
-    color: #071629;
-  } */
+
+  /* membership section */
+
+  #membership {
+    background-color: var(--secondary);
+    color: var(--light-text);
+    padding: 7%;
+    text-align: center;
+  }
+
+  #membership > h2 {
+    
+    font-size: 1.5em;
+    margin-bottom: 5%;
+  }
+
+  #membership > h2 span {
+    color: var(--primary);
+    font-weight: bolder;
+  }
+
+  .membership-items {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: 7%;
+  }
+
+  #membership h3 {
+    font-weight: bold;
+    margin: 7% 0;
+  }
+
+  
