@@ -1,4 +1,13 @@
-/* reset */
+/* VARIABLES */
+
+:root {
+    --primary: #C271FF;
+    --secondary: #071629;
+    --light-text: #fff;
+    --dark-text: rgba(7, 22, 41, 0.5);
+}
+
+/* RESET */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -44,7 +53,40 @@ table {
 	border-spacing: 0;
 }
 
+/* FONTS */
+@font-face {
+    font-family: 'Source San Pro';
+    src: url('../fonts/SourceSansPro-Regular.otf');
+}
 
+/* BASE STYLES */
+
+body {
+    font-family: 'Source San Pro';
+    overflow-x: hidden;
+    font-size: 14px;
+}
+
+/* navigation bar */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3%;
+}
+
+nav li {
+    display: inline;
+}
+
+nav ul a {
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 0 15px;
+    text-transform: uppercase;
+}
 
 /* hero */
 .hero {
@@ -52,4 +94,71 @@ table {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    color: var(--light-text);
+    text-align: center;
+}
+
+.hero div.get-schooled {
+    margin-top: 20%;
+}
+
+.hero h1 {
+    font-size: 5em;
+    font-weight: bolder;
+    margin: 30px;
+}
+
+.hero p.three-words {
+    word-spacing: 30px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+button {
+    background: var(--primary);
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 40px 3px rgba(0,0,0,0.9);
+    font-weight: 600;
+    font-size: 1.2em;
+    color: var(--light-text);
+}
+
+button:hover {
+    box-shadow: none;
+}
+
+.get-schooled button {
+    margin: 5%;
+}
+
+.purple-text {
+    color: var(--primary);
+    font-weight: bolder;
+}
+
+h2.pro-heading {
+    font-size: 1.3em;
+    margin-top: 15%;
+}
+
+div.pros {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5%;
+    margin: 0 5%;
+}
+
+.pro-name {
+    font-weight: 800;
+}
+
+.pro-name, .pro-name ~ p {
+    line-height: 1.5em;
+    
+}
+
+.pro-name ~ p {
+    font-style: italic;
 }
