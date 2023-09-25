@@ -1,24 +1,80 @@
+/* CSS Code Snippet */
+
+/* Flexbox */
 body, main {
     display: flex;
 }
 
+/* Body Styles */
 body {
     flex-direction: column;
+    background-color: #f7f7f7;
+    color: #333;
+    font-family: 'Raleway', sans-serif;
 }
 
+/* Header Styles */
+header {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+/* Anchor (Link) Styles */
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Logo Styles */
+.logo {
+    font-size: 24px;
+}
+
+/* Main Content Styles */
 main {
     flex-direction: row;
     flex: auto;
 }
 
+/* Article Styles */
 article {
     flex: 2;
 }
 
+/* Aside Styles */
 aside {
     flex: 1;
 }
 
+/* Article and Aside Styles */
 article, aside {
     overflow-y: auto;
 }
+
+/* Table Styles */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Table Footer Styles */
+tfoot {
+    font-weight: bold;
+}
+
+/* Anchor (Link) Hover Styles */
+a:hover {
+    color: #ff0000;
+}
+
+/* Heading Styles */
+h1, h2, h3 {
+    font-family: 'Raleway', sans-serif;
+}
+/* End of CSS Code Snippet */

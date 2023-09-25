@@ -1,0 +1,384 @@
+/* VARIABLES */
+
+:root {
+    --primary: #C271FF;
+    --secondary: #071629;
+    --light-text: #fff;
+    --dark-text: rgba(7, 22, 41, 0.5);
+}
+
+/* RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* FONTS */
+@font-face {
+    font-family: 'Source San Pro';
+    src: url('../fonts/SourceSansPro-Regular.otf');
+}
+
+/* BASE STYLES */
+
+body {
+    font-family: 'Source San Pro';
+    overflow-x: hidden;
+    font-size: 14px;
+}
+
+/* navigation bar */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3%;
+}
+
+nav li {
+    display: inline;
+}
+
+nav ul a {
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 0 15px;
+    text-transform: uppercase;
+}
+
+/* hero */
+.hero {
+    background-image: url('../images/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--light-text);
+    text-align: center;
+}
+
+.hero div.get-schooled {
+    margin-top: 20%;
+}
+
+.hero h1 {
+    font-size: 5em;
+    font-weight: bolder;
+    margin: 30px;
+}
+
+.hero p.three-words {
+    word-spacing: 30px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+button {
+    background: var(--primary);
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 40px 3px rgba(0,0,0,0.9);
+    font-weight: 600;
+    font-size: 1.2em;
+    color: var(--light-text);
+}
+
+button:hover {
+    box-shadow: none;
+}
+
+.get-schooled button {
+    margin: 5%;
+}
+
+.purple-text {
+    color: var(--primary);
+    font-weight: bolder;
+}
+
+h2.pro-heading {
+    font-size: 1.3em;
+    margin-top: 15%;
+}
+
+div.pros {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5%;
+    margin: 0 5%;
+}
+
+.pro-name {
+    font-weight: 800;
+}
+
+.pro-name, .pro-name ~ p {
+    line-height: 1.5em;
+    
+}
+
+.pro-name ~ p {
+    font-style: italic;
+}
+
+/* quote section */
+#quote {
+    background-color: var(--primary);
+    padding: 8% 15%;
+}
+
+.quote-content {
+    display: flex;
+    color: var(--light-text);
+    font-size: 1.3em;
+}
+
+.quote-content .quote-text {
+    margin-left: 3%;
+}
+
+.quote-text blockquote {
+    margin-bottom: 3.5%;
+}
+
+.quote-text h2 {
+    font-weight: 800;
+    margin-bottom: 2%;
+}
+
+.quote-text em {
+    font-style: italic;
+}
+
+/* videos section */
+
+#videos {
+    padding-bottom: 5%;
+}
+
+.video-heading {
+    font-size: 1.5em;
+    margin-top: 7%;
+    color: var(--dark-text);
+    text-align: center;
+    font-weight: 500;
+}
+
+#videos h2 span {
+    color: var(--primary);
+    font-weight: 800;
+}
+
+.video-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.5em;
+    grid-auto-flow: row;
+    margin-top: 4%;
+    padding: 0 10% 0 10%;
+    justify-content: space-around;
+}
+
+.single-video {
+    padding: 0 1.5%;
+}
+
+.thumbnail {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.thumbnail .image1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .thumbnail .image2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 25%;
+    z-index: 2;
+  }
+
+  .thumbnail .image2:hover {
+    opacity: 0.5;
+  }
+
+  .single-video h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bolder;
+  }
+
+  .single-video p {
+    color: rgb(65, 65, 65);
+  }
+
+  .avatar {
+    display: flex;
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
+
+  .avatar img {
+    width: 30px;
+    margin-right: 7%;
+  }
+
+  .avatar h3 {
+    display: flex;
+    color: var(--primary);
+    font-weight: bolder;
+    align-items: center;
+  }
+
+  .stars {
+    display: flex;
+    justify-content: space-between;
+    color: var(--primary);
+  }
+
+  .stars p {
+    color: var(--primary);
+  }
+
+
+  /* membership section */
+
+  #membership {
+    background-color: var(--secondary);
+    color: var(--light-text);
+    padding: 7%;
+    text-align: center;
+  }
+
+  #membership > h2 {
+    
+    font-size: 1.5em;
+    margin-bottom: 5%;
+  }
+
+  #membership > h2 span {
+    color: var(--primary);
+    font-weight: bolder;
+  }
+
+  .membership-items {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: 7%;
+  }
+
+  #membership h3 {
+    font-weight: bold;
+    margin: 7% 0;
+  }
+
+  /* FAQ section */
+  
+  #faq {
+    padding: 7%;
+    color: var(--dark-text);
+  }
+
+  #faq > h2 {
+    font-size: 2.5em;
+    color: black;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+
+  #faq .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5%;
+  }
+
+  .row .item {
+    padding: 5%;
+  }
+
+  .row .item h2 {
+    color: black;
+    font-weight: bold;
+    margin-bottom: 5%;
+  }
+
+  /* footer */
+
+  footer {
+    background-color: var(--secondary);
+    padding: 7%;
+    padding-bottom: 3%;
+    text-align: center;
+  }
+
+  footer .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4%;
+  }
+
+  .footer-socials {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .footer-socials img {
+    width: 50%;
+  }
+
+  footer p {
+    color: #444444;
+  }
+
+  
